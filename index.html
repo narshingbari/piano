@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
     <script>
         document.addEventListener("contextmenu", function(event) {
@@ -9,65 +10,67 @@
     </script>
     <meta charset="UTF-8">
     <title>Narshingbari Online Piano Casio</title>
-    <meta name="viewport" initial-scale=1">
     <link rel="icon" type="image/png" sizes="32x32" href="https://i.postimg.cc/28jQnDHs/Icon-16-by-16.jpg">
     <meta content='This is Narshingbari Saddam Piano Casio insrument website. its very easy to use, This website designed and developed by Saddam Hussain of Narshingbari' name='description' />
-  <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css">
 
 </head>
+
 <body>
-<!-- partial:index.partial.html -->
-<div class="menu">
-            <span class="title">Designed by Saddam</span>
-            <div class="options left">
-                <label for="instrument">Instruments</label>
-                <div class="dropdown">
-                    <select id='instrument' class="dropdown-select">
-                        <option value="1">Church Organ</option>
-                        <option value="2">Cloud Song</option>
-                        <option value="3">Tom Crazy</option>
-                        <option value="4">Phone</option>
-                    </select>
-                </div>
-                <span>
-                    <input type="checkbox" value='vibrato' id="vibrato">
-                    <label for="vibrato">Vibrato</label>
-                </span>
+    <!-- partial:index.partial.html -->
+    <div class="menu">
+        <span class="title">Designed by Saddam</span>
+        <div class="options left">
+            <label for="instrument">Instruments</label>
+            <div class="dropdown">
+                <select id='instrument' class="dropdown-select">
+                    <option value="1">Church Organ</option>
+                    <option value="2">Cloud Song</option>
+                    <option value="3">Tom Crazy</option>
+                    <option value="4">Phone</option>
+                </select>
             </div>
-            <div class="options right">
-                <input type="checkbox" checked value='animate' id="animate">
-                <label for="animate">Animate</label>
-                <input type="checkbox" value='notes' id="notes">
-                <label for="notes">Notes</label>
-                <input type="checkbox" value='keymap' id="keymap">
-                <label for="keymap">Key Map</label>
-            </div>
+            <span>
+                <input type="checkbox" value='vibrato' id="vibrato">
+                <label for="vibrato">Vibrato</label>
+            </span>
         </div>
-        <div class="volume">
-            <input id="volume" type="range" min="0" max="1" step="0.1" value="0.1"/>
-            <label for="volume">Gain</label>
+        <div class="options right">
+            <input type="checkbox" checked value='animate' id="animate">
+            <label for="animate">Animate</label>
+            <input type="checkbox" value='notes' id="notes">
+            <label for="notes">Notes</label>
+            <input type="checkbox" value='keymap' id="keymap">
+            <label for="keymap">Key Map</label>
         </div>
-        <div class="octave">
-            <p>Octave</p>
-            <div id="oct1" class="box b-active">1</div>
-            <div id="oct2" class="box">2</div>
+    </div>
+    <div class="volume">
+        <input id="volume" type="range" min="0" max="1" step="0.1" value="0.1" />
+        <label for="volume">Gain</label>
+    </div>
+    <div class="octave">
+        <p>Octave</p>
+        <div id="oct1" class="box b-active">1</div>
+        <div id="oct2" class="box">2</div>
+    </div>
+    <div class="scene">
+        <div class="piano animate" id="piano">
         </div>
-        <div class="scene">
-            <div class="piano animate" id="piano">   
-            </div>
-        </div>
-        <div class="info">
-            <p>
-                Use the keyboard to play the notes. <br> Press key <strong>1</strong> or <strong>2</strong> to change the octaves.
-            </p>
-        </div>
-        <div class="credits">
-            <p>
-                Narshingbari Saddam
-            </p>
-        </div>
-<!-- partial -->
-  <script src='./jquery.min.js'></script><script  src="./script.js"></script>
+    </div>
+    <div class="info">
+        <p>
+            Use the keyboard to play the notes. <br> Press key <strong>1</strong> or <strong>2</strong> to change the octaves.
+        </p>
+    </div>
+    <div class="credits">
+        <p>
+            Narshingbari Saddam
+        </p>
+    </div>
+    <!-- partial -->
+    <script src='./jquery.min.js'></script>
+    <script src="./script.js"></script>
 
 </body>
+
 </html>
