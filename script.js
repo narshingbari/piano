@@ -152,9 +152,9 @@
 		});
 		$( '#animate').on( 'change', function( e ) {
 			if( $( e.currentTarget ).is(':checked') ) {
-				win.piano.$target.addClass( 'animate' );
+				win.piano.$target.find( '.animate' ).addClass( 'info-active' );
 			} else {
-				win.piano.$target.removeClass( 'animate' );
+				win.piano.$target.find( '.animate' ).removeClass( 'info-active' );
 			}
 		});
 		$( '#instrument').on( 'change', function( e ) {
