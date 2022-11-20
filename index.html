@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-        <script>
+    <script>
         var isNS = (navigator.appName == "Netscape") ? 1 : 0;
         if (navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN || Event.MOUSEUP);
 
@@ -21,22 +21,33 @@
     </script>
     <script type="text/JavaScript">
         function killCopy(e){
-        return false
-    }
-    function reEnable(){
-        return true
-    }
-    document.onselectstart=new Function ("return false")
-    if (window.sidebar){
-        document.onmousedown=killCopy
-        document.onclick=reEnable
-    }
+            return false
+        }
+        function reEnable(){
+            return true
+        }
+        document.onselectstart=new Function ("return false")
+        if (window.sidebar){
+            document.onmousedown=killCopy
+            document.onclick=reEnable
+        }
+    </script>
+    <script>
+        document.addEventListener("keydown", (e) => {
+  // USE THIS TO DISABLE CONTROL AND ALL FUNCTION KEYS
+  // if (e.ctrlKey || (e.keyCode>=112 && e.keyCode<=123)) {
+  // THIS WILL ONLY DISABLE CONTROL AND F12
+          if (e.ctrlKey || e.keyCode==123) {
+            e.stopPropagation();
+            e.preventDefault();
+        }
+    });
 </script>
-    <meta charset="UTF-8">
-    <title>Narshingbari Online Piano Casio</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="https://i.postimg.cc/28jQnDHs/Icon-16-by-16.jpg">
-    <meta content='This is Narshingbari Saddam Piano Casio insrument website. its very easy to use, This website designed and developed by Saddam Hussain of Narshingbari' name='description' />
-    <link rel="stylesheet" href="./style.css">
+<meta charset="UTF-8">
+<title>Narshingbari Online Piano Casio</title>
+<link rel="icon" type="image/png" sizes="32x32" href="https://i.postimg.cc/28jQnDHs/Icon-16-by-16.jpg">
+<meta content='This is Narshingbari Saddam Piano Casio insrument website. its very easy to use, This website designed and developed by Saddam Hussain of Narshingbari' name='description' />
+<link rel="stylesheet" href="./style.css">
 
 </head>
 
